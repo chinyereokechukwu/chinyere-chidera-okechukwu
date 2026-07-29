@@ -7,5 +7,14 @@
   "institution": "University of Hradec Králové",
   "hero": "I develop Information and Knowledge Management approaches that help multinational organisations strengthen sustainability reporting, ESG governance, responsible Artificial Intelligence, and evidence based decision making across Africa and beyond.",
   "researchAreas": ["ESG & sustainability reporting", "Information & knowledge management", "Responsible AI", "Corporate governance", "Systems thinking", "Sustainability analytics"],
-  "metrics": [{"value":"15+","label":"Scholarly Outputs"},{"value":"7","label":"International Forums"},{"value":"1","label":"Principal Investigator Grant"},{"value":"2026","label":"Margaret Mead Memorial Award"},{"value":"20+","label":"Peer Review Contributions"},{"value":"4+","label":"Current Research Projects"}]
+  "metrics": [{"value":"15+","label":"Scholarly Outputs"},{"value":"7","label":"International Forums"},{"value":"1","label":"Principal Investigator Grant"},{"value":"2026","label":"Margaret Mead Memorial Award"},{"value":"20+","label":"Peer Review Contributions"},{"value":"4+","label":"Current Research Projects"}],
+  "profiles": [
+    {"id":"linkedin","label":"LinkedIn","url":"https://www.linkedin.com/in/chinyere-chidera-okechukwu-mba-ca-04670a8a","ariaLabel":"Visit Chinyere Chidera Okechukwu on LinkedIn","external":true},
+    {"id":"google-scholar","label":"Google Scholar","url":"https://scholar.google.com/citations?user=SgzmVv0AAAAJ&hl=en","ariaLabel":"View Chinyere Chidera Okechukwu’s Google Scholar profile","external":true},
+    {"id":"orcid","label":"ORCID","url":"https://orcid.org/0009-0008-8088-6193","ariaLabel":"View ORCID profile 0009-0008-8088-6193","external":true},
+    {"id":"researchgate","label":"ResearchGate","url":"https://www.researchgate.net/profile/Chinyere-Chidera-Okechukwu","ariaLabel":"View Chinyere Chidera Okechukwu on ResearchGate","external":true},
+    {"id":"web-of-science","label":"Web of Science","url":"https://www.webofscience.com/wos/author/record/MIJ-8422-2025","ariaLabel":"View Web of Science Researcher Profile MIJ-8422-2025","external":true},
+    {"id":"github","label":"GitHub","url":"https://github.com/chinyereokechukwu/chinyere-chidera-okechukwu","ariaLabel":"View Chinyere Chidera Okechukwu’s GitHub repository","external":true},
+    {"id":"email","label":"Email","url":"mailto:hello@chinyere-chidera-okechukwu.com","ariaLabel":"Email Chinyere Chidera Okechukwu","external":false}
+  ]
 }

@@ -22,4 +22,5 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   robots: { index: true, follow: true }
 };
-export default function RootLayout({children}:{children:React.ReactNode}) { return <html lang="en"><body><a href="#main" style={{position:"absolute",left:-9999}}>Skip to main content</a><SiteHeader/><main id="main">{children}</main><SiteFooter/></body></html>; }
+const personSchema = { "@context": "https://schema.org", "@type": "Person", name: site.name, honorificSuffix: site.credentials, url: site.siteUrl, email: site.email, jobTitle: "ESG Researcher and PhD Researcher", affiliation: { "@type": "Organization", name: site.institution }, sameAs: site.profiles.filter((profile) => profile.external && profile.url.startsWith("https://")).map((profile) => profile.url) };
+export default function RootLayout({children}:{children:React.ReactNode}) { return <html lang="en"><body><a href="#main" style={{position:"absolute",left:-9999}}>Skip to main content</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(personSchema)}}/></body></html>; }

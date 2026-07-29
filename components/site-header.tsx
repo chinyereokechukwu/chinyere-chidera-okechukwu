@@ -11,7 +11,7 @@ export function SiteHeader() {
   useEffect(() => { document.body.classList.toggle("dark", dark); }, [dark]);
   return <header style={{position:"sticky",top:0,zIndex:30,background:"color-mix(in srgb, var(--paper) 92%, transparent)",backdropFilter:"blur(16px)",borderBottom:"1px solid var(--line)"}}>
     <div className="container" style={{height:72,display:"flex",alignItems:"center",justifyContent:"space-between",gap:16}}>
-      <Link href="/" className="serif" style={{fontSize:20,fontWeight:700,display:"flex",gap:10,alignItems:"center"}}><span style={{display:"grid",placeItems:"center",width:34,height:34,borderRadius:"50%",background:"var(--navy)",color:"var(--gold)",fontSize:12}}>CCO</span> Chinyere</Link>
+      <Link href="/" aria-label="Chinyere Chidera Okechukwu home" style={{display:"flex",alignItems:"center"}}><img src="/brand/cco-icon.png" alt="CCO monogram" width="42" height="42" style={{width:42,height:42,borderRadius:"50%",objectFit:"cover"}}/></Link>
       <nav aria-label="Primary" style={{display:"flex",gap:18,alignItems:"center"}} className="desktop-nav">
         <Link href="/research" style={{fontSize:14}}>Research</Link>
         <Link href="/publications" style={{fontSize:14}}>Publications</Link>

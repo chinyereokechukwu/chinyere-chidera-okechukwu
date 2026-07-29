@@ -1,0 +1,1 @@
+import type { Metadata } from "next";import site from "@/data/site.json";export function pageMetadata(title:string,description:string):Metadata{return {title,description,alternates:{canonical:`${site.siteUrl}/${title.toLowerCase().replaceAll(" ","-")}`},openGraph:{title,description,url:site.siteUrl,type:"website"}};}

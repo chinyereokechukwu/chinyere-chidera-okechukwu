@@ -1,28 +1,46 @@
 "use client";
-import Link from "next/link";
-import { Menu, Moon, Search, Sun, X } from "lucide-react";
-import { useEffect, useState } from "react";
 
-const links = ["About", "Research", "Publications", "Projects", "Grants", "Awards", "Teaching", "Speaking", "Consulting", "Leadership & Service", "Media", "Downloads", "Contact"];
-const slug = (name: string) => `/${name.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`;
+import Link from "next/link";
+import { ChevronDown, Menu, Moon, Search, Sun, X } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+
+const primaryLinks = [
+  { label: "About", href: "/about" }, { label: "Research", href: "/research" },
+  { label: "Publications", href: "/publications" }, { label: "Projects", href: "/projects" },
+  { label: "Impact", href: "/leadership-service" }, { label: "Media", href: "/media" }, { label: "Contact", href: "/contact" },
+];
+const moreLinks = [
+  { label: "Grants", href: "/grants" }, { label: "Awards", href: "/awards" }, { label: "Teaching", href: "/teaching" },
+  { label: "Speaking", href: "/speaking" }, { label: "Consulting", href: "/consulting" }, { label: "Leadership and Service", href: "/leadership-service" }, { label: "Downloads", href: "/downloads" },
+];
 
 export function SiteHeader() {
-  const [open, setOpen] = useState(false); const [dark, setDark] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const [dark, setDark] = useState(false);
+  const moreRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => { document.body.classList.toggle("dark", dark); }, [dark]);
-  return <header style={{position:"sticky",top:0,zIndex:30,background:"color-mix(in srgb, var(--paper) 92%, transparent)",backdropFilter:"blur(16px)",borderBottom:"1px solid var(--line)"}}>
-    <div className="container" style={{height:72,display:"flex",alignItems:"center",justifyContent:"space-between",gap:16}}>
-      <Link href="/" aria-label="Chinyere Chidera Okechukwu home" style={{display:"flex",alignItems:"center"}}><img src="/brand/cco-icon.png" alt="CCO monogram" width="42" height="42" style={{width:42,height:42,borderRadius:"50%",objectFit:"cover"}}/></Link>
-      <nav aria-label="Primary" style={{display:"flex",gap:18,alignItems:"center"}} className="desktop-nav">
-        <Link href="/research" style={{fontSize:14}}>Research</Link>
-        <Link href="/publications" style={{fontSize:14}}>Publications</Link>
-        <Link href="/contact" className="button button-primary" style={{padding:"9px 14px"}}>Collaborate</Link>
+  useEffect(() => {
+    const closeOnOutside = (event: MouseEvent) => { if (!moreRef.current?.contains(event.target as Node)) setMoreOpen(false); };
+    const closeOnEscape = (event: KeyboardEvent) => { if (event.key === "Escape") { setMoreOpen(false); setMobileOpen(false); } };
+    document.addEventListener("mousedown", closeOnOutside); document.addEventListener("keydown", closeOnEscape);
+    return () => { document.removeEventListener("mousedown", closeOnOutside); document.removeEventListener("keydown", closeOnEscape); };
+  }, []);
+
+  const closeMenus = () => { setMobileOpen(false); setMoreOpen(false); };
+  return <header className="site-header">
+    <div className="container site-header-inner">
+      <Link href="/" aria-label="Chinyere Chidera Okechukwu home" style={{display:"flex",alignItems:"center",flexShrink:0}}><img src="/brand/cco-icon.png" alt="CCO monogram" width="42" height="42" style={{width:42,height:42,borderRadius:"50%",objectFit:"cover"}}/></Link>
+      <nav className="desktop-nav" aria-label="Primary navigation">
+        {primaryLinks.map((link) => <Link className="nav-link" href={link.href} key={link.href}>{link.label}</Link>)}
+        <div className="nav-more" ref={moreRef}>
+          <button className="nav-link nav-more-button" aria-haspopup="menu" aria-expanded={moreOpen} aria-controls="more-menu" onClick={() => setMoreOpen(!moreOpen)}>More <ChevronDown size={15} aria-hidden="true"/></button>
+          {moreOpen && <div id="more-menu" className="nav-dropdown" role="menu" aria-label="More portfolio pages">{moreLinks.map((link) => <Link role="menuitem" href={link.href} onClick={closeMenus} key={link.href}>{link.label}</Link>)}</div>}
+        </div>
       </nav>
-      <div style={{display:"flex",gap:8}}><Link href="/search" aria-label="Search" className="button button-secondary" style={{padding:9}}><Search size={17}/></Link><button aria-label="Toggle colour mode" className="button button-secondary" onClick={()=>setDark(!dark)} style={{padding:9}}>{dark?<Sun size={17}/>:<Moon size={17}/>}</button><button className="button button-secondary" aria-label="Open menu" onClick={()=>setOpen(!open)} style={{padding:9}}>{open?<X size={17}/>:<Menu size={17}/>}</button></div>
+      <div className="nav-actions"><Link href="/search" aria-label="Search the portfolio" className="icon-button"><Search size={18}/></Link><button aria-label="Toggle colour mode" className="icon-button" onClick={() => setDark(!dark)}>{dark ? <Sun size={18}/> : <Moon size={18}/>}</button><Link href="/contact" className="collaborate-link">Collaborate</Link><button className="icon-button mobile-menu-button" aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen(!mobileOpen)}>{mobileOpen ? <X size={19}/> : <Menu size={19}/>}</button></div>
     </div>
-    {open && (
-      <nav aria-label="Mobile navigation" className="container" style={{paddingBottom:24,display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(150px,1fr))",gap:12}}>
-        {links.map((link) => <Link key={link} href={slug(link) as never} onClick={() => setOpen(false)} style={{padding:"8px 0",fontSize:14}}>{link}</Link>)}
-      </nav>
-    )}
+    {mobileOpen && <nav aria-label="Mobile navigation" className="container mobile-links">{[...primaryLinks, ...moreLinks].map((link) => <Link href={link.href} onClick={closeMenus} key={link.href}>{link.label}</Link>)}</nav>}
   </header>;
 }

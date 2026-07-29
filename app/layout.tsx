@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import site from "@/data/site.json";
 
-const title = "Chinyere Chidera Okechukwu | ESG Researcher | PhD Researcher";
+const title = "Chinyere Chidera Okechukwu | Information & Knowledge Management Researcher";
 const description = "Official website of Chinyere Chidera Okechukwu, Chartered Accountant, CISA, PhD Researcher, Principal Investigator, and researcher in ESG, Sustainability Reporting, Information & Knowledge Management and Artificial Intelligence.";
 
 export const metadata: Metadata = {

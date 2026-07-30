@@ -29,7 +29,7 @@ Then open `http://localhost:3000`.
 1. Create an empty GitHub repository, then add it as `origin` and push `main`.
 2. In Netlify, select **Add new site → Import an existing project** and choose the GitHub repository.
 3. Set build command to `pnpm build` and publish directory to `.next` (Netlify detects Next.js automatically with its Next runtime).
-4. Set `NEXT_PUBLIC_SITE_URL=https://chinyere-chidera-okechukwu.com` in Netlify environment variables.
+4. Set `NEXT_PUBLIC_SITE_URL=https://chinyere-chidera-okechukwu.netlify.app` in Netlify environment variables until the custom domain is connected.
 5. Add the custom domain in Netlify Domain management and point DNS records as Netlify instructs.
 
 For form delivery, set `CONTACT_RECIPIENT_EMAIL` and connect the route handler to a transactional provider before publishing. The included endpoint validates and safely accepts requests but intentionally does not email a recipient without a provider configuration.

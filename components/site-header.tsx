@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 const primaryLinks = [
   { label: "About", href: "/about" }, { label: "Research", href: "/research" },
   { label: "Publications", href: "/publications" }, { label: "Projects", href: "/projects" },
-  { label: "Impact", href: "/leadership-service" }, { label: "Media", href: "/media" }, { label: "Contact", href: "/contact" },
+  { label: "Impact", href: "/leadership-service" }, { label: "ImpactBridge Foundation", href: "/impactbridge" }, { label: "Media", href: "/media" }, { label: "Contact", href: "/contact" },
 ];
 const moreLinks = [
   { label: "Grants", href: "/grants" }, { label: "Awards", href: "/awards" }, { label: "Teaching", href: "/teaching" },

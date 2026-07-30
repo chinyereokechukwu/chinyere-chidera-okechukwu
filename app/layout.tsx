@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Chinyere Chidera Okechukwu" }],
   creator: "Chinyere Chidera Okechukwu",
   alternates: { canonical: "/" },
-  openGraph: { type: "website", locale: "en_GB", url: "/", siteName: "Chinyere Chidera Okechukwu", title, description, images: [{ url: "/brand/cco-og-banner.png", width: 1800, height: 900, alt: "Chinyere Chidera Okechukwu, ESG Researcher and PhD Researcher" }] },
-  twitter: { card: "summary_large_image", title, description, images: ["/brand/cco-og-banner.png"] },
+  openGraph: { type: "website", locale: "en_GB", url: "/", siteName: "Chinyere Chidera Okechukwu", title, description, images: [{ url: "/brand/og-image.png", width: 1200, height: 630, alt: "Chinyere Chidera Okechukwu, Information and Knowledge Management Researcher" }] },
+  twitter: { card: "summary_large_image", title, description, images: ["/brand/og-image.png"] },
   icons: { icon: [{ url: "/brand/favicon.ico" }, { url: "/brand/favicon-32.png", sizes: "32x32", type: "image/png" }, { url: "/brand/favicon-192.png", sizes: "192x192", type: "image/png" }], apple: [{ url: "/brand/favicon-180.png", sizes: "180x180", type: "image/png" }], other: [{ rel: "mask-icon", url: "/brand/cco-icon.png", color: "#071B35" }] },
   manifest: "/site.webmanifest",
   robots: { index: true, follow: true }

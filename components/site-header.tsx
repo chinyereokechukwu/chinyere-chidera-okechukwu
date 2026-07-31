@@ -11,7 +11,7 @@ const primaryLinks = [
 ];
 const moreLinks = [
   { label: "Grants", href: "/grants" }, { label: "Awards", href: "/awards" }, { label: "Teaching", href: "/teaching" },
-  { label: "Speaking", href: "/speaking" }, { label: "Consulting", href: "/consulting" }, { label: "Leadership and Service", href: "/leadership-service" }, { label: "Downloads", href: "/downloads" },
+  { label: "Speaking", href: "/speaking" }, { label: "Consulting", href: "/consulting" }, { label: "Leadership and Service", href: "/leadership-service" }, { label: "WordRootedStudio", href: "/wordrootedstudio" }, { label: "Downloads", href: "/downloads" },
 ];
 
 export function SiteHeader() {

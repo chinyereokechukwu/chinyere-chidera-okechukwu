@@ -3,8 +3,14 @@ import Link from "next/link";
 import { ArrowUpRight, HeartHandshake, Target } from "lucide-react";
 import initiatives from "@/data/initiatives.json";
 
+type FoundationContent = (typeof initiatives)[number] & {
+  leadership: { role: string; name: string };
+  focusAreas: string[];
+  sdgs: string[];
+};
+
 function getFoundation() {
-  const foundation = initiatives.find((initiative) => initiative.id === "impactbridge");
+  const foundation = initiatives.find((initiative) => initiative.id === "impactbridge") as FoundationContent | undefined;
   if (!foundation) throw new Error("ImpactBridge Foundation content is missing.");
   return foundation;
 }

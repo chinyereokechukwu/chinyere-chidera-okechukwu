@@ -10,5 +10,19 @@
     "focusAreas": ["Education", "Youth Empowerment", "Women Empowerment", "Digital Skills", "Sustainability", "Community Development", "Partnerships"],
     "sdgs": ["SDG 1", "SDG 3", "SDG 4", "SDG 5", "SDG 8", "SDG 10", "SDG 13", "SDG 17"],
     "website": "https://sites.google.com/view/impactbridgefoundation/home"
+  },
+  {
+    "id": "wordrootedstudio",
+    "title": "WordRootedStudio",
+    "subtitle": "Inspiring faith, personal growth, and purposeful living through books, devotionals, journals, and digital resources.",
+    "description": "WordRootedStudio is a faith-based publishing and creative platform dedicated to producing Christ-centred books, devotionals, journals, Bible study resources, digital products, and inspirational content that encourage spiritual growth and purposeful living.",
+    "mission": "To create Christ-centred resources that encourage spiritual growth, cultivate purpose, and support everyday faith-filled living.",
+    "vision": "To become a trusted global platform for faith-based publishing, creative discipleship, and purposeful personal growth.",
+    "creations": ["Books", "Devotionals", "Journals", "Bible Study Resources", "Digital Products", "Inspirational Content"],
+    "featuredResources": ["Guided devotional journeys", "Faith and purpose journals", "Bible study resources"],
+    "recentPublications": ["New publications and digital resources are being prepared for release."],
+    "pinterest": "Pinterest collections and visual devotionals will be shared here.",
+    "mobileApp": "Mobile App - Coming Soon",
+    "website": "https://sites.google.com/view/wordrooted-studio/about"
   }
 ]

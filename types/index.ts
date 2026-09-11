@@ -13,4 +13,4 @@ export interface Publication {
 }
 
 export interface TimelineEntry { year: string; sortYear: number; title: string; organisation: string; description: string; }
-export interface Project { title: string; label: string; period: string; status: string; description: string; themes: string[]; }
+export interface Project { href?: string; role?: string; institution?: string; title: string; label: string; period: string; status: string; description: string; themes: string[]; }

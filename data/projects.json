@@ -1,5 +1,170 @@
 [
-  {"title":"Doctoral research: sustainability knowledge systems","label":"PhD","period":"Ongoing","status":"Active","description":"How multinational organisations create, classify, communicate and use sustainability-related knowledge in annual reports and disclosures.","themes":["ESG reporting","Knowledge management","Information quality"]},
-  {"title":"Strategic approaches to knowledge management in large multinational companies","label":"SPEV 2026","period":"2026","status":"Funded","description":"Principal Investigator research examining annual reports and selected perception aspects of organisational knowledge management.","themes":["Research leadership","Corporate reporting","Multinational companies"]},
-  {"title":"Responsible AI and corporate communication","label":"Future direction","period":"In development","status":"Planned","description":"A developing agenda on AI governance, credible corporate communication and accountability.","themes":["Responsible AI","Governance","Digital ethics"]}
+  {
+    "title": "Doctoral research: sustainability knowledge systems",
+    "label": "PhD",
+    "period": "Ongoing",
+    "status": "Active",
+    "description": "How multinational organisations create, classify, communicate and use sustainability-related knowledge in annual reports and disclosures.",
+    "themes": [
+      "ESG reporting",
+      "Knowledge management",
+      "Information quality"
+    ]
+  },
+  {
+    "title": "Strategic approaches to knowledge management in large multinational companies",
+    "label": "SPEV 2026",
+    "period": "2026",
+    "status": "Funded",
+    "description": "Principal Investigator research examining annual reports and selected perception aspects of organisational knowledge management.",
+    "themes": [
+      "Research leadership",
+      "Corporate reporting",
+      "Multinational companies"
+    ]
+  },
+  {
+    "title": "Responsible AI and corporate communication",
+    "label": "Future direction",
+    "period": "In development",
+    "status": "Planned",
+    "description": "A developing agenda on AI governance, credible corporate communication and accountability.",
+    "themes": [
+      "Responsible AI",
+      "Governance",
+      "Digital ethics"
+    ]
+  },
+  {
+    "id": "esg2win",
+    "acronym": "ESG2WIN",
+    "title": "ESG2WIN: ESG Reporting as a Competitiveness Tool for SMEs and Mid-caps",
+    "label": "Applied research project",
+    "period": "April 2026 to December 2028",
+    "status": "Active",
+    "role": "Researcher",
+    "institution": "University of Hradec Králové",
+    "softwareDeveloper": "Open-IT",
+    "href": "/projects/esg2win",
+    "careerPeriod": "2026 to Present",
+    "startYear": 2026,
+    "description": "Reframe ESG reporting from a compliance obligation into a practical decision-making tool for effective management of environmental, social, and governance areas, with AI support.",
+    "themes": [
+      "ESG reporting",
+      "SMEs and mid-caps",
+      "AI-supported ESG management"
+    ],
+    "researchDesign": "Research report on ESG in SMEs and mid-caps using triangulation of desk research, qualitative research, and quantitative research.",
+    "researchThemes": [
+      "Legal framework, requirements, and incentives",
+      "Motivations and barriers related to ESG reporting",
+      "Implementation challenges",
+      "Standardisation of criteria and measurement methods",
+      "Methodology for ESG data management",
+      "ESG awareness and understanding",
+      "Experience with ESG reporting",
+      "Voluntary and externally driven ESG reporting",
+      "Pressures from customers, supply chains, banks, financial institutions, and regulation",
+      "Administrative burden",
+      "Limited human resources and ESG knowledge",
+      "Costs associated with ESG reporting",
+      "ESG data availability, quality, and reliability",
+      "Data collection methods",
+      "ERP integration",
+      "AI use",
+      "External consultants",
+      "Reporting standards",
+      "ESG scores",
+      "Benchmarking",
+      "Scenarios",
+      "ROI on ESG measures"
+    ],
+    "softwareComponent": "Minimum viable software solution for ESG management and reporting, including document upload, questionnaire, ERP integration, AI integration, structured ESG data, development scenarios, projections, ROI on ESG measures, and scores in individual ESG areas.",
+    "benefits": [
+      "Promotion of voluntary ESG reporting",
+      "Standardised input and output data",
+      "Secure data handling",
+      "Insights into SME and mid-cap behaviour",
+      "Support for ESG policy and regulatory tools",
+      "Stronger connection between public administration and businesses",
+      "Reduced administrative burden",
+      "Stronger digitalisation of companies"
+    ],
+    "partners": [
+      {
+        "name": "Ministry of the Environment",
+        "role": "Application guarantor"
+      },
+      {
+        "name": "Ministry of Industry and Trade, Quality Department"
+      },
+      {
+        "name": "Association of SMEs and Crafts of the Czech Republic"
+      }
+    ],
+    "workPackages": [
+      {
+        "id": "WP1",
+        "title": "Project management and governance"
+      },
+      {
+        "id": "WP2",
+        "title": "ESG, regulation and stakeholder requirements"
+      },
+      {
+        "id": "WP3",
+        "title": "User research and ESG behaviour of companies"
+      },
+      {
+        "id": "WP4",
+        "title": "ESG modelling and AI"
+      },
+      {
+        "id": "WP5",
+        "title": "Data infrastructure and data governance"
+      },
+      {
+        "id": "WP6",
+        "title": "ESG2WIN software prototype"
+      },
+      {
+        "id": "WP7",
+        "title": "UX design and user experience testing"
+      },
+      {
+        "id": "WP8",
+        "title": "Pilot testing and validation"
+      },
+      {
+        "id": "WP9",
+        "title": "Dissemination, cooperation and implementation"
+      }
+    ],
+    "phases": [
+      {
+        "period": "Apr to Jun 2026",
+        "title": "Project launch and detailed planning"
+      },
+      {
+        "period": "Jul to Dec 2026",
+        "title": "Research and data collection"
+      },
+      {
+        "period": "Jan to Jun 2027",
+        "title": "Quantitative research and prototyping"
+      },
+      {
+        "period": "Jul to Dec 2027",
+        "title": "Research conclusions and software prototype"
+      },
+      {
+        "period": "Jan to Jun 2028",
+        "title": "Integration"
+      },
+      {
+        "period": "Jul to Dec 2028",
+        "title": "Validation"
+      }
+    ]
+  }
 ]

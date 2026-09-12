@@ -19,7 +19,7 @@ function Items({items}:{items:string[]}) {
 }
 
 export default function ESG2WINPage() {
-  const facts = [["Acronym",project.acronym],["Project period",project.period],["Institution",project.institution],["Role",project.role],["Project type",project.label],["Status",project.status]];
+  const facts = [["Acronym",project.acronym],["Project period",project.period],["Institution",project.institution],["Role",project.role],["Project type",project.label],["Funding / programme",project.fundingProgramme],["Status",project.status]];
   return <>
     <PageHero eyebrow={project.label} title={project.title} summary={project.role + " · " + project.institution}/>
     <section className="section"><div className="container">

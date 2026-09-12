@@ -39,7 +39,8 @@
     "id": "esg2win",
     "acronym": "ESG2WIN",
     "title": "ESG2WIN: ESG Reporting as a Competitiveness Tool for SMEs and Mid-caps",
-    "label": "Applied research project",
+    "label": "TAČR applied research project",
+    "fundingProgramme": "Technology Agency of the Czech Republic (TAČR)",
     "period": "April 2026 to December 2028",
     "status": "Active",
     "role": "Researcher",
@@ -48,7 +49,7 @@
     "href": "/projects/esg2win",
     "careerPeriod": "2026 to Present",
     "startYear": 2026,
-    "description": "Reframe ESG reporting from a compliance obligation into a practical decision-making tool for effective management of environmental, social, and governance areas, with AI support.",
+    "description": "ESG2WIN is a TAČR applied research project that aims to reframe ESG reporting from a compliance obligation into a practical decision-making tool for effective management of environmental, social, and governance areas, with AI support.",
     "themes": [
       "ESG reporting",
       "SMEs and mid-caps",
